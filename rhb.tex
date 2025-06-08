@@ -22,9 +22,10 @@ a4paper, twoside]{book}                % De viktigaste inställningarna för dok
 \usepackage[a4paper]{geometry}         % Särskilda dokumentinställningar
 \usepackage[utf8]{inputenc}            % Indata som UTF-8 är väldigt bra för t.ex. svenska
 \usepackage[T1]{fontenc}               % Fontkodning enligt modern standard
-\usepackage{fourier}
 \usepackage[swedish]{babel}            % Svensk avstavning och mycket mer
+\usepackage{fourier}                   % Fourier fonts
 \usepackage{listings}                  % Används för morsekoden
+\usepackage{minitoc}                   % Innehållsförteckning kapitelvis
 \usepackage{enumitem}                  % Enumrering
 \usepackage{multirow}                  % Tabeller med tabellrader som spänner över mer än en textrad
 \usepackage{amsmath}                   % Utökade matematiska symboler
@@ -72,12 +73,16 @@ a4paper, twoside]{book}                % De viktigaste inställningarna för dok
 
 \pagestyle{fancy}
 
+\dominitoc
+
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
 \tableofcontents
 
 \setlength{\parskip}{1.2 ex}
-\setlength{\parindent}{0 pt}XF
+\setlength{\parindent}{0 pt}
+
+\clearpage
 
 \input{tex/forord}                % Förord att uppdatera för respektive upplaga
 
@@ -87,7 +92,7 @@ a4paper, twoside]{book}                % De viktigaste inställningarna för dok
 \input{tex/kap-reglemente}        % Lagar, regler mm
 \input{tex/kap-trafik}            % Hur radiotrafik genomförs
 \input{tex/kap-teknik}            % Tekniska bitar om radio
-\input{tex/kap-frekvenser}            % Frekvenslistor
+\input{tex/kap-frekvenser}        % Frekvenslistor
 \input{tex/appendix}              % Övriga delar som inte riktigt passar i ovanstående
 
 %\printindex
