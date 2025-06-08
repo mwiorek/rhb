@@ -1,4 +1,4 @@
-VERSION=11
+VERSION=12-RC1
 
 all:
 	pdflatex -jobname="rhb-${VERSION}" rhb
