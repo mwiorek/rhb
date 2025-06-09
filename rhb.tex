@@ -55,10 +55,12 @@ a4paper, twoside]{book}                % De viktigaste inställningarna för dok
 \setlist{nosep}                        % Separera inte numrerade och punktlistor mer
 \usepackage{todonotes}                 % Kunna lägga in att-göra i dokumentet
 \renewcommand{\arraystretch}{1.15}     % Sätt ett mer lämpligt avstånd
-%\headheight=15pt                       % Justera dokumentets huvud
 \usepackage[colorlinks,
   linkcolor=black,                     % Hyperref should always be loaded last
-  urlcolor=blue]{hyperref}             % Hyperref möjliggör länkar utanför dokumentet
+  urlcolor=blue,
+  pdfauthor={\Forfattare},
+  pdftitle={\TitleText \DokVersion},
+  pdfsubject={ISBN \ISBN}]{hyperref}   % Hyperref möjliggör länkar utanför dokumentet
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOKUMENT
