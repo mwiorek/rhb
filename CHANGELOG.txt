@@ -1,0 +1,20 @@
+==============================================================================
+ ÄNDRINGSLOGG FÖR RADIOHANDBOKEN
+==============================================================================
+
+Utgåva 12
+
+* Ny minitoc (table of contents) för respektive kapitelsida gör
+  navigeringen smidigare både på skärm och läsplatta.
+
+* Nytt kapitel dit jag har flyttat saker som vågutbredning, rymdväder
+  som påverkar vågutbredning och lite om antenner.
+
+* Ett antal mindre förbättringar, stavfel och tabeller som
+  uppdaterats.
+
+* Nya kanaler för marin VHF där man har tagit några av de
+  duplexkanaler som fortfarande finns kvar men ändrat dem så man kan
+  genom att välja nya kanalnummer använda frekvenserna som två stycken
+  simplexkanaler i stället.
+
