@@ -1,0 +1,31 @@
+% Lathunden tar bara in ett antal tabeller som behövs.
+
+%%% Förstasidan
+\pagestyle{empty}
+\input{tex/init-morse}
+\newgeometry{bottom=25mm,top=25mm, bindingoffset=0mm}
+\vfill
+\vspace*{4cm}
+
+%% Logobilden här
+\hspace{-30.2mm}\includegraphics[width=\paperwidth]{logo/rubrikbild}
+
+%% Rubriken här
+\begin{flushright}
+	\Huge{\bfseries{\TitleText}} \\[3mm]
+	\Large{\bfseries{\SubtitleText}}\\[3mm]
+        \normalsize{\DokVersion}
+\end{flushright}
+
+%\listoftodos % Används bara under dev
+
+\newpage
+
+\input{tab/frekvensband-instegsamator}
+\input{tab/landsprefix}
+\input{tab/distrikt}
+\input{tab/sv-bokstaveringsalfabetet}
+\input{tab/itu-bokstaveringsalfabetet}
+\input{tab/q-koden}
+\input{tab/s-varden}
+\input{tab/bandplaner-amator-hf}
