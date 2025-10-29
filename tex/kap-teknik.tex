@@ -2,6 +2,7 @@
 % !TeX spellcheck = sv_SE
 
 \chapter{Teknik}
+\index{teknik}
 
 I teknikkapitlet kommer vi titta på en mängd begrepp som har med radioteknik
 att göra. Det är effekt och brus, beräkning av radiohorisont och utbredning
@@ -13,6 +14,7 @@ känna till.
 \clearpage
 
 \section{Decibel}
+\index{decibel}
 
 Decibel är ett grundläggande begrepp inom radiovärlden och är i grunden en
 logaritmisk skala som bygger på tiologaritmen. Från början använde man
@@ -39,6 +41,8 @@ matar in 10 W i en förstärkare och får ut 20 W är förstärkningen 3 dB. På
 samma sätt är -3 dB en förlust av 50 \% så om vi har en kabel med förlusten 3
 dB för en viss frekvens så tappar vi halva effekten i kabeln.
 
+\index{decibel!omräkningsfaktor}
+
 \begin{table}[h]
 \centering
 \begin{tabular}{rr|rr|rr|rr}
@@ -52,6 +56,9 @@ dB för en viss frekvens så tappar vi halva effekten i kabeln.
 \end{table}
 
 \subsection{Effekt i dBW och dBm}
+\index{dBm} \index{dBW}
+\index{decibel!dBW}
+\index{decibel!dBm}
 
 Effekter anges i W eller i decibel relaterat till 1 mW (dBm) dvs ''decibel
 milliwatt'' eller relaterat 1W (dBW) ''decibel watt''. Tabell över effekt och
@@ -72,6 +79,10 @@ decibelwatt nedan:
 \end{table}
 
 \subsection{Antennvinst i dBi och dBd}
+\index{decibel!dBi}
+\index{decibel!dBd}
+\index{decibel!dBd}
+\index{decibel!dBi}
 
 Riktantenner sägs ha en så kallad antennvinst och den berättar något om
 antennens riktverkan. En riktantenn har en (eller några få) riktningar som den
@@ -140,6 +151,10 @@ den).
 \clearpage
 
 \section{S-värden, signalvärde, S-meter}
+\index{S-värde}
+\index{signalstyrka}
+\index{signalvärde}
+\index{S-meter}
 
 Signalstyrkan i amatörradio uttrycks oftast som S-värden. Dessa fås i regel
 genom nivån på AGC\footnote{AGC betyder automatic gain control, en funktion
@@ -162,8 +177,11 @@ som det borde vara vilket är bra att vara uppmärksam på.
 \input{tab/s-varden}
 
 \section{Modulationer}
+\index{modulation}
 
 \subsection{Bandbredd olika modulationer}
+\index{modulation!bandbredd}
+\index{bandbredd}
 
 Olika modulationer upptar olika bandbredd. Detta är mycket viktigt att förstå
 när man ställer in sin radiostation. Detta gäller särskilt att beakta i
@@ -204,6 +222,12 @@ skruvat i sin radio. Syftet kan var att få bättre genomslag vid långväga
 förbindelser.
 
 \subsection{Telegrafi, CW}
+\index{telegrafi!bandbredd}
+\index{bandbredd!telegrafi}
+\index{modulation!telegrafi}
+\index{modulation!CW}
+\index{telegrafi}
+\index{CW}
 
 CW står för continuous waves och innebär en rent omodulerad bärvåg. I
 mottagaren används en oscillator för att återskapa hörbar signal. Detta
@@ -221,6 +245,11 @@ nycklar eller släpper nyckeln. Sker detta mjukt är bandbredden låg, har man
 skarp in- eller urkoppling av bärvågen nyttjar man mer bandbredd.
 
 \subsection{Amplitudmodulering, AM}
+\index{AM!bandbredd}
+\index{bandbredd!AM}
+\index{amplitudmodulation}
+\index{modulation!AM}
+\index{AM}
 
 Amplitudmodulering finns i flera olika varianter. Vanlig AM består av en
 bärvåg vars styrka varieras i takt med signalen som skall sändas. Denna
@@ -241,6 +270,9 @@ går från 300-3000\,Hz en bandbredd som varierar med talet från upp till
 Där $f_m$ är högsta modulationsfrekvensen.
 
 \subsection{SSB/ESB -- Enkelt sidband, en AM-variant}
+\index{SSB} \index{USB} \index{LSB} \index{ÖSB} \index{USB}
+\index{ESB} \index{amplitudmodulation!enkelt sidband}
+\index{modulation!SSB/ESB}
 
 Enkelt sidband används av radioamatörer för att minska på bandbredden samt
 lägga radioenergin där den behövs mest. Eftersom båda sidbanden innehåller
@@ -271,6 +303,9 @@ beräknas som för AM och halveras.
 Där $f_m$ är högsta modulationsfrekvensen.
 
 \subsection{Frekvensmodulering, FM}
+\index{frekvensmodulation}
+\index{FM}
+\index{modulation!FM}
 
 Frekvensmodulering består av att man tar en bärvåg och modulerar den med talet
 genom att skifta dess frekvens. Om skiftet i frekvens är mycket litet kallas
@@ -316,9 +351,10 @@ Rundradio (sveriges radio P1) & 75 kHz        & 16 kHz         & 182 kHz       &
   \caption{Några vanliga FM-modulationers egenskaper}
 \end{table}
 
-
-
 \section{Termiska brusgolvet}
+\index{brusgolv}
+\index{termiskt brus}
+
 När man lyssnar i radion på en frekvens där ingen nyttosignal finns hörs ett
 brus. Detta brus består av olika komponenter men en av de viktigaste är det
 termiska brusgolvet. Detta sätter en nedre gräns för hur svaga signaler en
@@ -384,6 +420,9 @@ bruseffekt i mottagaren.
 
 
 \section{CTCSS subtoner}
+\index{CTCSS}
+\index{CTCSS!frekvenser}
+\index{frekvenser!CTCSS}
 
 Inom amatörradio används ofta pilottoner (subtoner) som
 CTCSS\footnote{Contnuous Tone-Conded Squelch System} för repeatrar och
@@ -407,6 +446,8 @@ sub-kanaler. De som används är följande toner och frekvenser:
 \end{table}
 
 \subsection{CTCSS-zoner i Sverige}
+\index{CTCSS!Zoner}
+\index{amatörradiorepeatrar!CTCSS}
 
 Rekommendationer för sändaramatörers repeatrar i olika distrikt och län att
 använda CTCSS för att hindra att störningar uppkommer vid conds mm. Det ger
@@ -434,6 +475,10 @@ distriktsiffran.
 \end{table}
 
 \section{DTMF-toner}
+\index{DTMF}
+\index{DTMF!frekvenser}
+\index{frekvenser!DTMF}
+
 \label{DTMF}
 
 DTMF används för in-band signallering, dvs signallering i det hörbara området.
@@ -518,6 +563,10 @@ alternativ, inte minst som appar till telefoner och surfplattor.
 \clearpage
 
 \section{Missanpassning}
+\index{missanpassning}
+\index{stående våg}
+\index{VSWR}
+\index{return loss}
 
 Return loss och VSWR anger samma sak. VSWR är vanligare inom amatörradio medan
 man i profesionella sammanhang föredrar att prata om return loss. RL är
@@ -577,6 +626,8 @@ säga att den är dålig om den är sämre än 10\,dB\,RL. I VSWR är det ungef�
 1:1,2 och 1:2 ungefär.
 
 \subsection{Konvertera mellan VSWR och RL}
+\index{VSWR och RL}
+\index{RL och VSWR}
 
 \begin{equation}
 	\text{RL} = 20 \cdot \log_{10} \frac{\text{VSWR}-1}{\text{VSWR}+1}
@@ -607,10 +658,13 @@ Där RL är return loss i dB och VSWR är ståendevågförhållandet, exempelvis
 \end{table}
 
 \section{Radioberäkningar för VHF och UHF}
+\index{VHF}
+\index{UHF}
 
 Några av de vanligaste radioberäkningarna man kan komma att behöva göra.
 
 \subsection{Beräkning av radiohorisonten}
+\index{radiohorisont!VHF}
 
 Radiohorisonten är den sträcka som markvågen kan nå utan särskilda hjälpmedel
 och i frånvaro av andra effekter som särskilda kondisioner (tropo eller
@@ -649,11 +703,13 @@ För optisk sikt kan man säga följande:
 I båda ovanstående är radien $r$ i kilometer och höjden $h$ i meter.
 
 \subsection{Sträckdämpning}
+\index{sträckdämpning}
+\index{path loss}
 
-Sträckdämpningen beror på flera olika faktorer, inte minst terrängen och det
-som finns mellan sändaren och mottagaren. I den fria rymden följer den en
-enkel geometrisk utbredning men närmare marken behöver man stoppa in en del
-kompensationsfaktorer.
+Sträckdämpningen (eng. ''path loss'') beror på flera olika faktorer, inte minst
+terrängen och det som finns mellan sändaren och mottagaren. I den fria rymden
+följer den en enkel geometrisk utbredning men närmare marken behöver man stoppa
+in en del kompensationsfaktorer.
 
 \begin{equation}
 	PL_0 = 20 \cdot \log(f) + 20 \cdot \log(d) - 27,55
@@ -667,13 +723,13 @@ För sträckdämpning vid mark får man mäta eller skatta en utbredningsdämpni
 som en konstant $k$ som man använder för att modifiera formeln med och får då
 följande variant:
 
-
 \begin{equation}
 	PL_m = 20 \cdot \log(f) + (20+k) \cdot \log(d) - 27,55
 \end{equation}
 
 Där $PL_m$ är sträckdämpningen vid marken. Faktorn $k$ kan uppskattas enligt
 följande tabell:
+\index{Okumura--Hata}
 
 \begin{table}[H]
 	\begin{centering}
